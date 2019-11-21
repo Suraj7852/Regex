@@ -4,8 +4,9 @@ echo "Welcome to regex"
 
 read registration
 
-userName=^[A-Z][a-z]{3,}
-if [[ $registration =~ $userName ]];
+firstName=^[A-Z][a-z]{3,}
+lastName=^[A-Z][a-z]{3,}
+if [[ $registration =~ $lastName ]];
 then
        echo "yes"
 else
