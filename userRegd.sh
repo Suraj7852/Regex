@@ -5,7 +5,9 @@ echo "Welcome to regex"
 read registration
 
 firstName=^[A-Z][a-z]{3,}
-if [[ $registration =~ $firstName ]];
+
+lastName=^[A-Z][a-z]{3,}
+if [[ $registration =~ $lastName ]];
 then
        echo "yes"
 else
